@@ -14,6 +14,9 @@ function App() {
     }))
   }
   function handleAddTodos(newTodos){
+    if(!newTodos || newTodos.stringify===""){
+      return;
+    }
     const newTodoList=[...todos,newTodos]
     persistData(newTodoList)
     setTodos(newTodoList)
