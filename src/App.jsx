@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
 import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
+import ThemeToggle from "./components/ThemeToggle"
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
     <main>
       <TodoInput todoValue={todoValue} setTodosValue={setTodosValue} handleAddTodos={handleAddTodos}/>
       <TodoList handleEditTodos={handleEditTodos} handleDeleteTodos={handleDeleteTodos} todos={todos}/>
+      <ThemeToggle/>
     </main>
   )
 }
