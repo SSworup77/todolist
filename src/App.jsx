@@ -50,7 +50,6 @@ function App() {
     <main>
       <TodoInput todoValue={todoValue} setTodosValue={setTodosValue} handleAddTodos={handleAddTodos}/>
       <TodoList handleEditTodos={handleEditTodos} handleDeleteTodos={handleDeleteTodos} todos={todos}/>
-      <ThemeToggle/>
     </main>
   )
 }
